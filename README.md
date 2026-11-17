@@ -32,6 +32,57 @@
 | **Math** | Formulas written by the AI in LaTeX and rendered with KaTeX (offline) |
 | **Backup** | Daily automatic backup, manual backup, restore, export to JSON + Markdown |
 
+# 📸 UNIMIND – Application Preview
+
+Scopri l'interfaccia di UNIMIND e le sue principali funzionalità.
+
+## 🏠 Dashboard
+
+La schermata principale di UNIMIND, disponibile in modalità chiara e scura.
+
+<table>
+  <tr>
+    <td align="center"><strong>☀️ Light Mode</strong></td>
+    <td align="center"><strong>🌙 Dark Mode</strong></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/Dashboard_chiaro.png" width="100%" alt="UNIMIND Dashboard Light"></td>
+    <td><img src="screenshots/Dashboard_scuro.png" width="100%" alt="UNIMIND Dashboard Dark"></td>
+  </tr>
+</table>
+
+## 📚 Gestione delle materie
+
+Organizza le tue materie e mantieni tutto il materiale di studio in ordine.
+
+<p align="center">
+  <img src="screenshots/Subjects.png" width="85%" alt="UNIMIND Subjects">
+</p>
+
+## 📄 Gestione dei documenti
+
+Carica e organizza i PDF delle tue dispense per utilizzarli durante lo studio.
+
+<p align="center">
+  <img src="screenshots/Documents.png" width="85%" alt="UNIMIND Documents">
+</p>
+
+## 🤖 Tutor AI
+
+Interagisci con l'intelligenza artificiale per comprendere meglio gli argomenti e ricevere supporto personalizzato.
+
+<p align="center">
+  <img src="screenshots/Tutor.png" width="85%" alt="UNIMIND AI Tutor">
+</p>
+
+## 📈 Monitoraggio dei progressi
+
+Tieni sotto controllo il tuo percorso di apprendimento e monitora i tuoi progressi.
+
+<p align="center">
+  <img src="screenshots/Progress.png" width="85%" alt="UNIMIND Progress">
+</p>
+
 ## How it works
 
 ```
