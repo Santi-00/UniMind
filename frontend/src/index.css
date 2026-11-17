@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Sfondo: sfumature luminose dietro il vetro ===== */
+body {
+  @apply min-h-screen text-slate-800 antialiased;
+  background:
+    radial-gradient(900px 600px at 8% -8%, rgba(139, 92, 246, 0.32), transparent 60%),
+    radial-gradient(800px 600px at 100% 8%, rgba(56, 189, 248, 0.26), transparent 55%),
+    radial-gradient(700px 500px at 55% 112%, rgba(236, 72, 153, 0.16), transparent 60%),
+    #eef0fb;
+  background-attachment: fixed;
+}
+.dark body {
+  @apply text-slate-100;
+  background:
+    radial-gradient(900px 620px at 8% -8%, rgba(124, 58, 237, 0.42), transparent 60%),
+    radial-gradient(800px 600px at 100% 6%, rgba(37, 99, 235, 0.30), transparent 55%),
+    radial-gradient(700px 520px at 55% 112%, rgba(192, 38, 211, 0.20), transparent 60%),
+    #070b1f;
+  background-attachment: fixed;
+}
+select option { @apply bg-white text-slate-800; }
+.dark select option { @apply bg-slate-900 text-slate-100; }
+
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+@layer components {
+  /* Vetro: sfondo traslucido + sfocatura + bordo luminoso */
+  .glass { @apply border border-white/70 bg-white/50 backdrop-blur-xl shadow-[0_8px_32px_rgba(76,58,160,0.12)] dark:border-white/10 dark:bg-white/[0.06] dark:shadow-[0_8px_32px_rgba(0,0,0,0.35)]; }
+  .card { @apply glass rounded-2xl p-5; animation: rise 0.35s ease both; }
+  .btn { @apply inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-500 px-4 py-2 text-sm font-medium text-white shadow-lg shadow-brand-600/30 transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-400 disabled:opacity-50 disabled:shadow-none; }
+  .btn-ghost { @apply inline-flex items-center gap-1 rounded-lg px-2.5 py-1.5 text-sm text-slate-600 transition hover:bg-white/60 dark:text-slate-300 dark:hover:bg-white/10; }
+  .input { @apply w-full rounded-xl border border-white/80 bg-white/60 px-3 py-2 text-sm backdrop-blur placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30 dark:border-white/10 dark:bg-white/5; }
+  .label { @apply mb-1 block text-xs font-medium text-slate-500 dark:text-slate-400; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
